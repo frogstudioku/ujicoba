@@ -206,7 +206,7 @@ footer a:hover{transform:scale(1.06)}
 <button id="snd" aria-label="Toggle music" title="Music"><i></i><i></i><i></i><i></i></button>
 <div id="lb"><img alt=""></div>
 <script>
-const P=[["Tempur®","tempur","bed","#4a2a14,#d9a05b"],["AGM®","agm","bed","#7a3416,#e8884a"],["Simply®","simply","bed","#8c6a3a,#f0d49a"],["King Koil®","king-koil","bed","#3b2415,#a8744a"],["Serta®","serta","bed","#a5601f,#ffcf7a"],["Florence®","florence","bed","#9a5a3c,#f2c4a0"],["Ogawa","ogawa","other","#3b2415,#c98a52"],["Dept Store","dept-store","other","#5a4631,#c9ac84"],["Tanihub","tanihub","other","#6b5420,#d8c070"],["Sesa","sesa","other","#b4421b,#f5a46a"],["Dimsuminc","dimsuminc","other","#8a2a14,#f2b84b"]];
+const P=[["Tempur®","tempur","bed","#4a2a14,#d9a05b"],["AGM®","agm","bed","#7a3416,#e8884a"],["Simply®","simply","bed","#8c6a3a,#f0d49a"],["King Koil®","king-koil","bed","#3b2415,#a8744a"],["Serta®","serta","bed","#a5601f,#ffcf7a"],["Florence®","florence","bed","#9a5a3c,#f2c4a0"],["Ogawa","ogawa","other","#3b2415,#c98a52"],["DAP","dept-store","other","#5a4631,#c9ac84"],["Tanihub","tanihub","other","#6b5420,#d8c070"],["Sesa","sesa","other","#b4421b,#f5a46a"],["Dimsuminc","dimsuminc","other","#8a2a14,#f2b84b"]];
 const row=document.getElementById('row'),cnt=document.getElementById('count');
 P.forEach((p,i)=>{const a=document.createElement('a');a.className='card rv';a.style.setProperty('--i',i+3);a.dataset.g=p[2];a.href='#'+p[1];
 a.innerHTML='<div class="poster" style="background:linear-gradient(160deg,'+p[3]+')"><small>'+(p[2]=='bed'?'BEDDING':'BRAND')+'</small>'+p[0]+'</div><b>'+p[0]+'</b><span>Design Project</span>';row.appendChild(a);
